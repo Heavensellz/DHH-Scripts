@@ -1,0 +1,1152 @@
+local Converted = {
+	["_DHSALTCONTROL"] = Instance.new("ScreenGui");
+	["_Main"] = Instance.new("Frame");
+	["_Frame"] = Instance.new("Frame");
+	["_ImageLabel"] = Instance.new("ImageLabel");
+	["_Frame1"] = Instance.new("Frame");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UICorner"] = Instance.new("UICorner");
+	["_Stock"] = Instance.new("Frame");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_Stock1"] = Instance.new("TextLabel");
+	["_Total"] = Instance.new("TextLabel");
+	["_UIGradient"] = Instance.new("UIGradient");
+	["_TaxTotal"] = Instance.new("TextLabel");
+	["_UIGradient1"] = Instance.new("UIGradient");
+	["_Lost Cash"] = Instance.new("Frame");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_Lost Cash1"] = Instance.new("TextLabel");
+	["_Total1"] = Instance.new("TextLabel");
+	["_UIGradient2"] = Instance.new("UIGradient");
+	["_Frame2"] = Instance.new("Frame");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_ImageLabel1"] = Instance.new("ImageLabel");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_discord.gg"] = Instance.new("TextLabel");
+	["_Title"] = Instance.new("TextLabel");
+	["_UIGradient3"] = Instance.new("UIGradient");
+}
+
+-- Properties:
+
+Converted["_DHSALTCONTROL"].IgnoreGuiInset = true
+Converted["_DHSALTCONTROL"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_DHSALTCONTROL"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_DHSALTCONTROL"].Name = "DHSALTCONTROL"
+Converted["_DHSALTCONTROL"].Parent = game:GetService("CoreGui")
+
+Converted["_Main"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Main"].BorderSizePixel = 0
+Converted["_Main"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Main"].Name = "Main"
+Converted["_Main"].Parent = Converted["_DHSALTCONTROL"]
+
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(11.000000294297934, 11.000000294297934, 11.000000294297934)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Interactable = false
+Converted["_Frame"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_Frame"].Parent = Converted["_Main"]
+
+Converted["_ImageLabel"].Image = "rbxassetid://92669858300383"
+Converted["_ImageLabel"].ImageColor3 = Color3.fromRGB(42.000001296401024, 42.000001296401024, 42.000001296401024)
+Converted["_ImageLabel"].ImageTransparency = 0.800000011920929
+Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(42.000001296401024, 42.000001296401024, 42.000001296401024)
+Converted["_ImageLabel"].BackgroundTransparency = 1
+Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ImageLabel"].BorderSizePixel = 0
+Converted["_ImageLabel"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_ImageLabel"].Parent = Converted["_Main"]
+
+Converted["_Frame1"].BackgroundColor3 = Color3.fromRGB(9.000000413507223, 9.000000413507223, 9.000000413507223)
+Converted["_Frame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame1"].BorderSizePixel = 0
+Converted["_Frame1"].Position = UDim2.new(0.246872544, 0, 0.41419667, 0)
+Converted["_Frame1"].Size = UDim2.new(0.505631924, 0, 0.170222834, 0)
+Converted["_Frame1"].Parent = Converted["_DHSALTCONTROL"]
+
+Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke"].Parent = Converted["_Frame1"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner"].Parent = Converted["_Frame1"]
+
+Converted["_Stock"].BackgroundColor3 = Color3.fromRGB(24.00000236928463, 24.00000236928463, 24.00000236928463)
+Converted["_Stock"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stock"].BorderSizePixel = 0
+Converted["_Stock"].Position = UDim2.new(0.00699998019, 0, 0.0429998934, 0)
+Converted["_Stock"].Size = UDim2.new(0.485000014, 0, 0.920000017, 0)
+Converted["_Stock"].Name = "Stock"
+Converted["_Stock"].Parent = Converted["_Frame1"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner1"].Parent = Converted["_Stock"]
+
+Converted["_Stock1"].Font = Enum.Font.SourceSansBold
+Converted["_Stock1"].Text = "Stock (Before/After tax):"
+Converted["_Stock1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stock1"].TextScaled = true
+Converted["_Stock1"].TextSize = 14
+Converted["_Stock1"].TextWrapped = true
+Converted["_Stock1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Stock1"].BackgroundTransparency = 1
+Converted["_Stock1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Stock1"].BorderSizePixel = 0
+Converted["_Stock1"].Position = UDim2.new(0.0051920712, 0, -0.00432473654, 0)
+Converted["_Stock1"].Size = UDim2.new(0.986096144, 0, 0.321888864, 0)
+Converted["_Stock1"].Name = "Stock"
+Converted["_Stock1"].Parent = Converted["_Stock"]
+
+Converted["_Total"].Font = Enum.Font.Unknown
+Converted["_Total"].Text = "$123,456,789"
+Converted["_Total"].TextColor3 = Color3.fromRGB(0, 199.00001853704453, 7.000000532716513)
+Converted["_Total"].TextScaled = true
+Converted["_Total"].TextSize = 14
+Converted["_Total"].TextWrapped = true
+Converted["_Total"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Total"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Total"].BackgroundTransparency = 1
+Converted["_Total"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Total"].BorderSizePixel = 0
+Converted["_Total"].Position = UDim2.new(0.0299999993, 0, 0.25999999, 0)
+Converted["_Total"].Size = UDim2.new(0.973, 0, 0.475, 0)
+Converted["_Total"].Name = "Total"
+Converted["_Total"].Parent = Converted["_Stock"]
+
+Converted["_UIGradient"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(17.00000088661909, 255, 0)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(3.000000058673322, 153.00000607967377, 0))
+}
+Converted["_UIGradient"].Rotation = 91
+Converted["_UIGradient"].Parent = Converted["_Total"]
+
+Converted["_TaxTotal"].Font = Enum.Font.Unknown
+Converted["_TaxTotal"].Text = "$123,456,789"
+Converted["_TaxTotal"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TaxTotal"].TextScaled = true
+Converted["_TaxTotal"].TextSize = 14
+Converted["_TaxTotal"].TextWrapped = true
+Converted["_TaxTotal"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_TaxTotal"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TaxTotal"].BackgroundTransparency = 1
+Converted["_TaxTotal"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TaxTotal"].BorderSizePixel = 0
+Converted["_TaxTotal"].Position = UDim2.new(0.0299999993, 0, 0.652999997, 0)
+Converted["_TaxTotal"].Size = UDim2.new(0.961, 0, 0.347, 0)
+Converted["_TaxTotal"].Name = "TaxTotal"
+Converted["_TaxTotal"].Parent = Converted["_Stock"]
+
+Converted["_UIGradient1"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(153.00000607967377, 153.00000607967377, 153.00000607967377))
+}
+Converted["_UIGradient1"].Rotation = 91
+Converted["_UIGradient1"].Parent = Converted["_TaxTotal"]
+
+Converted["_Lost Cash"].BackgroundColor3 = Color3.fromRGB(24.00000236928463, 24.00000236928463, 24.00000236928463)
+Converted["_Lost Cash"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Lost Cash"].BorderSizePixel = 0
+Converted["_Lost Cash"].Position = UDim2.new(0.507000029, 0, 0.0430000015, 0)
+Converted["_Lost Cash"].Size = UDim2.new(0.485000014, 0, 0.920000017, 0)
+Converted["_Lost Cash"].Name = "Lost Cash"
+Converted["_Lost Cash"].Parent = Converted["_Frame1"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner2"].Parent = Converted["_Lost Cash"]
+
+Converted["_Lost Cash1"].Font = Enum.Font.SourceSansBold
+Converted["_Lost Cash1"].Text = "Lost Cash (This Session):"
+Converted["_Lost Cash1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Lost Cash1"].TextScaled = true
+Converted["_Lost Cash1"].TextSize = 14
+Converted["_Lost Cash1"].TextWrapped = true
+Converted["_Lost Cash1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Lost Cash1"].BackgroundTransparency = 1
+Converted["_Lost Cash1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Lost Cash1"].BorderSizePixel = 0
+Converted["_Lost Cash1"].Position = UDim2.new(0.0051920712, 0, -0.00432473654, 0)
+Converted["_Lost Cash1"].Size = UDim2.new(0.986096144, 0, 0.321888864, 0)
+Converted["_Lost Cash1"].Name = "Lost Cash"
+Converted["_Lost Cash1"].Parent = Converted["_Lost Cash"]
+
+Converted["_Total1"].Font = Enum.Font.Unknown
+Converted["_Total1"].Text = "$123,456,789"
+Converted["_Total1"].TextColor3 = Color3.fromRGB(199.00001853704453, 0, 0)
+Converted["_Total1"].TextScaled = true
+Converted["_Total1"].TextSize = 14
+Converted["_Total1"].TextWrapped = true
+Converted["_Total1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Total1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Total1"].BackgroundTransparency = 1
+Converted["_Total1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Total1"].BorderSizePixel = 0
+Converted["_Total1"].Position = UDim2.new(0.0299999993, 0, 0.25999999, 0)
+Converted["_Total1"].Size = UDim2.new(0.973, 0, 0.475, 0)
+Converted["_Total1"].Name = "Total"
+Converted["_Total1"].Parent = Converted["_Lost Cash"]
+
+Converted["_UIGradient2"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(153.00000607967377, 0, 0))
+}
+Converted["_UIGradient2"].Rotation = 91
+Converted["_UIGradient2"].Parent = Converted["_Total1"]
+
+Converted["_Frame2"].BackgroundColor3 = Color3.fromRGB(9.000000413507223, 9.000000413507223, 9.000000413507223)
+Converted["_Frame2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame2"].BorderSizePixel = 0
+Converted["_Frame2"].Position = UDim2.new(0.246872544, 0, 0.315217584, 0)
+Converted["_Frame2"].Size = UDim2.new(0.505631924, 0, 0.0797085091, 0)
+Converted["_Frame2"].Parent = Converted["_DHSALTCONTROL"]
+
+Converted["_UIStroke1"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke1"].Parent = Converted["_Frame2"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner3"].Parent = Converted["_Frame2"]
+
+Converted["_ImageLabel1"].Image = "rbxassetid://108303071683565"
+Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(49.000004678964615, 49.000004678964615, 49.000004678964615)
+Converted["_ImageLabel1"].BackgroundTransparency = 0.6499999761581421
+Converted["_ImageLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ImageLabel1"].BorderSizePixel = 0
+Converted["_ImageLabel1"].Position = UDim2.new(0.0149532547, 0, 0.124427855, 0)
+Converted["_ImageLabel1"].Size = UDim2.new(0.0660033375, 0, 0.744435072, 0)
+Converted["_ImageLabel1"].Parent = Converted["_Frame2"]
+
+Converted["_UIStroke2"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke2"].Parent = Converted["_ImageLabel1"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 100)
+Converted["_UICorner4"].Parent = Converted["_ImageLabel1"]
+
+Converted["_TextLabel"].Font = Enum.Font.Unknown
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0.105228961, 0, 0.1568214, 0)
+Converted["_TextLabel"].Size = UDim2.new(0.5, 0, 0.677192152, 0)
+Converted["_TextLabel"].Parent = Converted["_Frame2"]
+
+Converted["_discord.gg"].Font = Enum.Font.SourceSansBold
+Converted["_discord.gg"].Text = "discord.gg/dhs"
+Converted["_discord.gg"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_discord.gg"].TextScaled = true
+Converted["_discord.gg"].TextSize = 29
+Converted["_discord.gg"].TextWrapped = true
+Converted["_discord.gg"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_discord.gg"].BackgroundTransparency = 1
+Converted["_discord.gg"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_discord.gg"].BorderSizePixel = 0
+Converted["_discord.gg"].Position = UDim2.new(0.675717294, 0, 0.416356683, 0)
+Converted["_discord.gg"].Size = UDim2.new(0.324282587, 0, 0.540505707, 0)
+Converted["_discord.gg"].Name = "discord.gg"
+Converted["_discord.gg"].Parent = Converted["_Frame2"]
+
+Converted["_Title"].Font = Enum.Font.SourceSansBold
+Converted["_Title"].Text = "Dahood Scripts"
+Converted["_Title"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].TextScaled = true
+Converted["_Title"].TextSize = 38
+Converted["_Title"].TextWrapped = true
+Converted["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].BackgroundTransparency = 1
+Converted["_Title"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Title"].BorderSizePixel = 0
+Converted["_Title"].Position = UDim2.new(0.675717235, 0, 0.0163566116, 0)
+Converted["_Title"].Size = UDim2.new(0.323540688, 0, 0.529999971, 0)
+Converted["_Title"].Name = "Title"
+Converted["_Title"].Parent = Converted["_Frame2"]
+
+Converted["_UIGradient3"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(176.00000470876694, 176.00000470876694, 176.00000470876694))
+}
+Converted["_UIGradient3"].Rotation = 90
+Converted["_UIGradient3"].Parent = Converted["_Title"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function HMUY_fake_script() -- Fake Script: StarterGui.DHSALTCONTROL.Frame.ImageLabel.LocalScript
+	local Players = game:GetService("Players")
+	local Player = game.Players.LocalPlayer
+	
+	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	Converted["_ImageLabel1"].Image = content
+end
+local function FTHAIGH_fake_script() -- Fake Script: StarterGui.DHSALTCONTROL.Frame.TextLabel.LocalScript
+	local player = game.Players.LocalPlayer
+	local username = player.Name
+	local textLabel = Converted["_TextLabel"]
+	
+	textLabel.Text = username
+end
+
+coroutine.wrap(HMUY_fake_script)()
+coroutine.wrap(FTHAIGH_fake_script)()
+
+local function format(number)
+    number = tostring(number)
+    return number:reverse():gsub("...","%0,",math.floor((#number-1)/3)):reverse()
+end
+
+local function hms_format(Int)
+    return string.format("%02i", Int)
+end
+
+local function convert_to_hms(seconds)
+    local minutes = (seconds - seconds%60)/60
+    seconds = seconds - minutes*60
+    local hours = (minutes - minutes%60)/60
+    minutes = minutes - hours*60
+    return hms_format(hours)..":"..hms_format(minutes)..":"..hms_format(seconds)
+end
+
+local data_folder = game.Players.LocalPlayer:WaitForChild("DataFolder")
+local timeelapsed = tick()
+local startingcash = data_folder.Currency.Value
+
+task.spawn(function()
+    while task.wait() do
+        pcall(function()
+            Converted["_Total"].Text = "$"..format(data_folder.Currency.Value)
+			local taxAmount = data_folder.Currency.Value * 0.30
+			local fullamount = data_folder.Currency.Value - taxAmount
+			Converted["_TaxTotal"].Text = fullamount
+        end)
+    end
+end)
+
+task.spawn(function()
+    while task.wait() do
+        pcall(function()
+            Converted["_Total1"].Text = "$"..format(startingcash - data_folder.Currency.Value)
+        end)
+    end
+end)
+
+--// Optimization
+setfpscap(getgenv().AltControlSetting.Settings.Main.Fps)
+UserSettings().GameSettings.MasterVolume = 0
+settings().Rendering.QualityLevel = 1
+local runService = game:GetService("RunService")
+runService:Set3dRenderingEnabled(getgenv().AltControlSetting.Settings.Main["3DRendering"])
+
+local optimize = pcall(function()
+    local names = {"Cashiers", "Ignored", "Players", "Camera", "Terrain", game.Players.LocalPlayer.Name}
+    for _, instance in workspace:GetChildren() do
+        if not table.find(names, instance.Name) then
+            instance:Destroy()
+        end
+    end
+
+    local names = {"Drop", "Shop", "Help the patient for money", "HospitalJob", "Siren", "HouseItemSale", "Clean the shoes on the floor and come to me for cash", LocalPlayer.Name}
+    for _, instance in workspace.Ignored:GetChildren() do
+        if not table.find(names, instance.Name) then
+            instance:Destroy()
+        end
+    end
+
+    for _, instance in workspace.Ignored.HouseItemSale:GetChildren() do
+        instance:Destroy()
+    end
+
+    task.spawn(function()
+        for i,v in pairs(workspace:GetDescendants()) do 
+            if (v:IsA("Seat") or (v:IsA("VehicleSeat"))) then 
+                v:Destroy()
+            end
+        end
+    end)
+        
+    local function createPlatformsAtPositions()
+        local positions = {
+            Vector3.new(-190.1, 21 - 3, -381.75),
+            Vector3.new(418.99, 48 - 3, -804),
+            Vector3.new(-613.4, 21.74 - 3, -325.45),
+            Vector3.new(353.99, 48 - 3, -592),
+            Vector3.new(-849.37, 21.74 - 3, -337.31),
+            Vector3.new(-454.45, 21.75 - 3, -484.95),
+            Vector3.new(-404.5, 21.74 - 3, 88.09),
+            Vector3.new(-496.04, 48 - 3, -594.2),
+            Vector3.new(-142.5, 21.75 - 3, -823.2),
+            Vector3.new(-321.5, 21.75 - 3, -448.79),
+            Vector3.new(-208,21.75 - 3,-1131.96),
+            Vector3.new(-377.35,12.74 - 3,-689.7),
+            Vector3.new(-735.57,21.74 - 3,142.32),
+            Vector3.new(-132.39,21.74 - 3,-231.05),
+            Vector3.new(-810.19,21.74 - 3,-216.58),
+            Vector3.new(211.81,48 - 3,-594.96),
+            Vector3.new(8.14,21.75 - 3,-546.75),
+            Vector3.new(494,48 - 3,-595.68),
+            Vector3.new(-838.89,21.75 - 3,-620.58),
+            Vector3.new(450,48 - 3,-402)
+        }
+
+        for _, position in ipairs(positions) do
+
+            local platform = Instance.new("Part")
+            platform.Size = Vector3.new(10, 1, 10)
+            platform.Position = position
+            platform.Anchored = true
+            platform.BrickColor = BrickColor.new("Bright blue")
+            platform.Parent = workspace
+            platform.CanCollide = true
+
+            platform.Transparency = 0.2
+        end
+    end
+
+    createPlatformsAtPositions()
+end)
+
+--// Alt Control Communication
+getgenv().PointInTable = 1
+
+local alts = {}
+local randomwords = {"eminent4", "subdued1", "flippant6", "vivacious2", "feigned4", "fallacious8"}
+
+local function chatRandomMessages()
+    local randomIndex = math.random(1, #randomwords)
+    local randomMessage = randomwords[randomIndex]
+
+    require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain).MessagePosted:fire(randomMessage)
+end
+
+chatRandomMessages()
+
+local function detectalts(player, message)
+    for _, word in ipairs(randomwords) do
+        if message == word then
+            for _, id in ipairs(alts) do
+                if id == player.UserId then
+                    return
+                end
+            end
+
+            table.insert(alts, player.UserId)
+            getgenv().PointInTable = getgenv().PointInTable + 1
+            return
+        end
+    end
+end
+
+local function removealtid(player)
+    for index, id in ipairs(alts) do
+        if id == player.UserId then
+            table.remove(alts, index)
+            getgenv().PointInTable = getgenv().PointInTable - 1
+            break
+        end
+    end
+end
+
+game.Players.PlayerRemoving:Connect(removealtid)
+
+--// Services/main variables
+local Player = game.Players.LocalPlayer
+local Players = game.Players
+local HostUser = getgenv().AltControlSetting.Main.Host
+local CHAT_EVENT = game.ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local Host = Players:FindFirstChild(HostUser)
+
+--// command settings
+local airlock = false
+local ground = false    
+local drop = nil
+local customdrop = nil
+
+--// Checks if host is ingame and if not it waits
+if not Host then
+	print("Host is not here waiting for him to join!")
+	Players:WaitForChild(HostUser, 9e9)
+	Host = Players:FindFirstChild(HostUser)
+end
+
+--// All Functions
+
+local function msg(message)
+	CHAT_EVENT:FireServer(message, "All")
+end
+
+local SetupsTable = {
+    Bank = {
+        Positions = {
+			--// Row 1
+			CFrame.new(-375, 18.75, -337),
+            CFrame.new(-369, 18.75, -337),
+			CFrame.new(-381, 18.75, -337),
+
+			--// Row 2
+            CFrame.new(-375, 18.75, -330),
+            CFrame.new(-369, 18.75, -330),
+            CFrame.new(-381, 18.75, -330),
+            CFrame.new(-363, 18.75, -330),
+            CFrame.new(-387, 18.75, -330),
+
+			--// Row 3
+            CFrame.new(-375, 18.75, -323),
+            CFrame.new(-369, 18.75, -323),
+            CFrame.new(-381, 18.75, -323),
+            CFrame.new(-363, 18.75, -323),
+            CFrame.new(-387, 18.75, -323),
+
+			--// Row 4
+			CFrame.new(-375, 18.75, -316),
+			CFrame.new(-369, 18.75, -316),
+			CFrame.new(-381, 18.75, -316),
+			CFrame.new(-363, 18.75, -316),
+			CFrame.new(-387, 18.75, -316),
+
+			--// Row 5
+			CFrame.new(-375, 18.75, -309),
+			CFrame.new(-369, 18.75, -309),
+			CFrame.new(-381, 18.75, -309),
+			CFrame.new(-363, 18.75, -309),
+			CFrame.new(-387, 18.75, -309),
+
+			--// Row 6
+			CFrame.new(-375, 18.75, -302),
+			CFrame.new(-369, 18.75, -302),
+			CFrame.new(-381, 18.75, -302),
+			CFrame.new(-363, 18.75, -302),
+			CFrame.new(-387, 18.75, -302),
+
+			--// Row 7
+			CFrame.new(-375, 18.75, -295),
+		    CFrame.new(-369, 18.75, -295),
+			CFrame.new(-381, 18.75, -295),
+			CFrame.new(-363, 18.75, -295),
+			CFrame.new(-387, 18.75, -295),
+
+			--// Row 8
+			CFrame.new(-375, 18.75, -288),
+			CFrame.new(-369, 18.75, -288),
+			CFrame.new(-381, 18.75, -288),
+			CFrame.new(-363, 18.75, -288),
+			CFrame.new(-387, 18.75, -288),
+        },
+    },
+    Club = {
+        Positions = {
+			--// Row 1
+            CFrame.new(-259.587, -8.746, -352.162),
+            CFrame.new(-269.587, -8.746, -352.162),
+            CFrame.new(-249.587, -8.746, -352.162),
+            CFrame.new(-279.587, -8.746, -352.162),
+            CFrame.new(-239.587, -8.746, -352.162),
+            CFrame.new(-289.587, -8.746, -352.162),
+
+			--// Extra 1
+            CFrame.new(-239.587, -8.746, -342.162),
+            CFrame.new(-289.587, -8.746, -342.162),
+
+			--// Row 2
+            CFrame.new(-259.587, -8.746, -362.162),
+            CFrame.new(-269.587, -8.746, -362.162),
+            CFrame.new(-249.587, -8.746, -362.162),
+            CFrame.new(-279.587, -8.746, -362.162),
+            CFrame.new(-239.587, -8.746, -362.162),
+            CFrame.new(-289.587, -8.746, -362.162),
+
+			--// Row 3
+            CFrame.new(-259.587, -8.746, -372.162),
+            CFrame.new(-269.587, -8.746, -372.162),
+            CFrame.new(-249.587, -8.746, -372.162),
+            CFrame.new(-279.587, -8.746, -372.162),
+            CFrame.new(-239.587, -8.746, -372.162),
+            CFrame.new(-289.587, -8.746, -372.162),
+
+			--// Row 4
+			CFrame.new(-259.587, -8.746, -382.162),
+			CFrame.new(-269.587, -8.746, -382.162),
+			CFrame.new(-249.587, -8.746, -382.162),
+			CFrame.new(-279.587, -8.746, -382.162),
+			CFrame.new(-239.587, -8.746, -382.162),
+			CFrame.new(-289.587, -8.746, -382.162),
+
+			--// Row 5
+			CFrame.new(-259.587, -8.746, -392.162),
+			CFrame.new(-269.587, -8.746, -392.162),
+			CFrame.new(-249.587, -8.746, -392.162),
+			CFrame.new(-279.587, -8.746, -392.162),
+			CFrame.new(-239.587, -8.746, -392.162),
+			CFrame.new(-289.587, -8.746, -392.162),
+
+			--// Row 6
+			CFrame.new(-259.587, -8.746, -402.162),
+			CFrame.new(-269.587, -8.746, -402.162),
+			CFrame.new(-249.587, -8.746, -402.162),
+			CFrame.new(-279.587, -8.746, -402.162),
+			CFrame.new(-239.587, -8.746, -402.162),
+			CFrame.new(-289.587, -8.746, -402.162),
+        },
+
+    },
+    Court = {
+        Positions = {
+			--// Row 1
+			CFrame.new(-922.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-922.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-922.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-922.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-922.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-922.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 2
+			CFrame.new(-942.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-942.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-942.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-942.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-942.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-942.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 3
+			CFrame.new(-902.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-902.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-902.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-902.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-902.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-902.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 4
+			CFrame.new(-962.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-962.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-962.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-962.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-962.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-962.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 5
+			CFrame.new(-882.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-882.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-882.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-882.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-882.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-882.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 6
+			CFrame.new(-982.045, 19.6, -474.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-982.045, 19.6, -489.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-982.045, 19.6, -504.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-982.045, 19.6, -459.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-982.045, 19.6, -519.82) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-982.045, 19.6, -444.82) * CFrame.Angles(0, math.rad(90), 0),
+
+			--// Row 7
+			CFrame.new(-994.468, 19.5, -482.2) * CFrame.Angles(0, math.rad(90), 0),
+			CFrame.new(-869.827, 19.5, -482.2) * CFrame.Angles(0, math.rad(90), 0),
+		}
+    },
+    Train = {
+        Positions = {
+			--// Row 1
+			CFrame.new(637.745, 45.5, -46.082),
+			CFrame.new(657.745, 45.5, -46.082),
+			CFrame.new(617.745, 45.5, -46.083),
+			CFrame.new(677.745, 45.5, -46.082),
+			CFrame.new(597.745, 45.5, -46.083),
+
+			--// Row 2
+			CFrame.new(637.745, 45.5, -56.083),
+			CFrame.new(657.745, 45.5, -56.082),
+			CFrame.new(617.745, 45.5, -56.082),
+			CFrame.new(677.745, 45.5, -56.082),
+			CFrame.new(597.745, 45.5, -56.082),
+
+			--// Row 3
+			CFrame.new(637.745, 45.5, -66.083),
+			CFrame.new(657.745, 45.5, -66.083),
+			CFrame.new(617.745, 45.5, -66.083),
+			CFrame.new(677.745, 45.5, -66.083),
+			CFrame.new(597.745, 45.5, -66.083),
+
+			--// Row 4
+			CFrame.new(637.745, 45.5, -76.083),
+			CFrame.new(657.745, 45.5, -76.083),
+			CFrame.new(617.745, 45.5, -76.083),
+			CFrame.new(677.745, 45.5, -76.083),
+			CFrame.new(597.745, 45.5, -76.083),
+
+			--// Row 5
+			CFrame.new(637.745, 45.5, -86.083),
+			CFrame.new(657.745, 45.5, -86.083),
+			CFrame.new(617.745, 45.5, -86.083),
+			CFrame.new(677.745, 45.5, -86.083),
+			CFrame.new(597.745, 45.5, -86.083),
+
+			--// Row 6
+			CFrame.new(637.745, 45.5, -96.083),
+			CFrame.new(657.745, 45.5, -96.083),
+			CFrame.new(617.745, 45.5, -96.083),
+			CFrame.new(677.745, 45.5, -96.083),
+			CFrame.new(597.745, 45.5, -96.083),
+
+			--// Row 7
+			CFrame.new(637.745, 45.5, -106.083),
+			CFrame.new(657.745, 45.5, -106.083),
+			CFrame.new(617.745, 45.5, -106.083),
+			CFrame.new(677.745, 45.5, -106.083),
+			CFrame.new(597.745, 45.5, -106.083),
+
+			--// Row 8
+			CFrame.new(637.745, 45.5, -36.082),
+			CFrame.new(657.745, 45.5, -36.082),
+			CFrame.new(617.745, 45, -36.082),
+        }
+
+    }
+}
+
+local lastPlatform = nil
+
+local function createPlatform(position)
+    if lastPlatform then
+        lastPlatform:Destroy()
+    end
+
+    local platform = Instance.new("Part")
+    platform.Size = Vector3.new(10, 1, 10)
+    platform.Position = position - Vector3.new(0, 1, 0)
+    platform.Anchored = true
+    platform.CanCollide = true
+    platform.BrickColor = BrickColor.new("Bright blue")
+    platform.Parent = game.Workspace
+
+    lastPlatform = platform
+
+    return platform
+end
+
+local function Setup(Type, Debugmode)
+    if Debugmode then
+        for PointInTable = 1, 40 do
+            local Table = SetupsTable[Type]
+            local position = Table["Positions"][PointInTable]
+            
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = position
+            local clone = game.Players.LocalPlayer.Character:Clone()
+            clone.Parent = workspace
+            clone.HumanoidRootPart.CFrame = position
+
+			local humanoidRootPart = Player.Character.HumanoidRootPart
+			humanoidRootPart.CFrame = position
+        end
+    else
+		local Table = SetupsTable[Type]
+        local PointInTable = getgenv().PointInTable
+        if Table and Table["Positions"] and Table["Positions"][PointInTable] then
+            local position = Table["Positions"][PointInTable]
+			if airlock == true then
+				local pos = position + CFrame.new(0, 15, 0)
+				createPlatform(pos.Position)
+				local humanoidRootPart = Player.Character.HumanoidRootPart
+				humanoidRootPart.CFrame = pos
+			elseif ground == true then
+				local pos = position - CFrame.new(0, 8, 0)
+				createPlatform(pos.Position)
+				local humanoidRootPart = Player.Character.HumanoidRootPart
+				humanoidRootPart.CFrame = pos
+			else
+				createPlatform(position.Position)
+				local humanoidRootPart = Player.Character.HumanoidRootPart
+				humanoidRootPart.CFrame = position
+			end
+        else
+            warn("No position found for the given setup type and point in table.")
+        end
+    end
+end
+
+local function Drop(Type)
+    if Type == true and drop == nil then
+        drop = true
+        while drop do
+            local args = {
+                [1] = "DropMoney",
+                [2] = "15000"
+            }
+            game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+            wait(2.5)
+        end
+    elseif Type == false then
+        drop = nil
+    end
+end
+local function ShowWallet()
+	if Player.Backpack:FindFirstChild("[Wallet]") then
+		Player.Character.Humanoid:EquipTool(Player.Backpack:FindFirstChild("[Wallet]"))
+	end
+end
+local function RemoveWallet()
+	if Player.Character:FindFirstChild("[Wallet]") then
+		Player.Character.Humanoid:UnequipTools()
+	end
+end
+
+local function block(type)
+    if type == true then
+        if block == nil or block == false then
+            game.ReplicatedStorage.MainEvent:FireServer("Block", true)
+            block = true
+        end
+    elseif type == false then
+        if block == true then
+            game.ReplicatedStorage.MainEvent:FireServer("Block", false)
+            block = false
+        end
+    end
+end
+
+local function AirLock()
+    local pos = lastPlatform.Position
+    local airlockpos = pos + Vector3.new(0, 13.5, 0)
+
+    createPlatform(airlockpos)
+    Player.Character.HumanoidRootPart.Position = airlockpos + Vector3.new(0, 1, 0)
+end
+
+local function UnAirlock()
+    local pos = lastPlatform.Position
+    local airlockpos = pos - Vector3.new(0, 11.5, 0)
+
+    createPlatform(airlockpos)
+    Player.Character.HumanoidRootPart.Position = airlockpos + Vector3.new(0, 1, 0)
+end
+
+local function Ground()
+    local pos = lastPlatform.Position
+    local groundpos = pos - Vector3.new(0, 6.5, 0)
+
+    createPlatform(groundpos)
+    Player.Character.HumanoidRootPart.Position = groundpos + Vector3.new(0, 1, 0)
+end
+
+local function Surface()
+    local pos = lastPlatform.Position
+    local surfacepos = pos + Vector3.new(0, 8.5, 0)
+
+    createPlatform(surfacepos)
+    Player.Character.HumanoidRootPart.Position = surfacepos + Vector3.new(0, 1, 0)
+end
+
+local function airlockfunc()
+	if airlock then
+		return
+	end
+	if ground then
+		ground = false
+		Surface()
+	end
+	airlock = true
+	AirLock()
+end
+local function unairlockfunc()
+	if not airlock then
+		return
+	end
+	if ground then
+		ground = false
+		airlock = false
+		Surface()
+		return
+	end
+	airlock = false
+	UnAirlock()
+end
+local function groundfunc()
+	if ground then
+		return
+	end
+	if airlock then
+		airlock = false
+		UnAirlock()
+	end
+	ground = true
+	Ground()
+end
+local function surfacefunc()
+	if not ground then
+		return
+	end
+	if airlock then
+		airlock = false
+		ground = false
+		UnAirlock()
+		return
+	end
+	ground = false
+	Surface()
+end
+
+--// On inject functions
+local function defaultsetup(type)
+    msg("Setup "..type)
+	Setup(type)
+end
+
+defaultsetup(getgenv().AltControlSetting.Settings.Misc.Setup)
+    
+if getgenv().AltControlSetting.Settings.Misc.Wallet == true then
+	ShowWallet()
+else
+	return
+end
+
+if getgenv().AltControlSetting.Main.Ads == true then
+	local ad = getgenv().AltControlSetting.Settings.Misc.AdSettings.Message
+	task.spawn(function()
+		while task.wait(getgenv().AltControlSetting.Settings.Misc.AdSettings.Interval * 60) do
+			msg(ad)
+		end
+	end)
+else
+	return
+end
+
+local Connections = {}
+local CmdSettings = {}
+
+--// Listening to host or gui function
+local function Initiate()
+	CurrAnim = nil
+	for Index,Var in pairs(CmdSettings) do
+		CmdSettings[Var] = nil
+	end
+	CmdSettings = {}
+	for Index,Connection in pairs(Connections) do
+		Index[Connection] = nil
+		Connection:Disconnect()
+	end
+	Connections["OnChat"] = game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(data)
+ 		local Message = data.Message
+		local plr = game:service"Players"[data.FromSpeaker]
+		if plr.UserId ~= getgenv().AltControlSetting.Main.Host then
+			return
+		end
+ 		Message = string.lower(Message)
+		local Args = string.split(Message," ")
+		local AmountOfArgs = #Args
+		local prefix = getgenv().AltControlSetting.Settings.Main.Prefix
+		if Host and Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") and Player.Character:FindFirstChild("Humanoid") and Player.Character.Humanoid.Health > 0 then
+			if Args[1] == prefix.."drop" then
+				Drop(true)
+			elseif Args[1] == prefix.."stop" then
+				Drop(false)
+			elseif Message == prefix.."airlock" then
+				airlockfunc()
+			elseif Message == prefix.."unairlock" then
+				unairlockfunc()
+
+			elseif Message == prefix.."ground" then
+				groundfunc()
+			elseif Message == prefix.."surface" then
+				surfacefunc()
+
+			elseif Message == prefix.."redeem" then
+				game:GetService("ReplicatedStorage").MainEvent:FireServer("EnterPromoCode", Args[1])
+
+			elseif Args[1] == prefix.."block" then
+				block(true)
+			elseif Args[1] == prefix.."unblock" then
+				block(false)
+
+			elseif Message == prefix.."setup bank" then
+				Setup("Bank")
+			elseif Message == prefix.."setup court" then
+				Setup("Court")
+			elseif Message == prefix.."setup club" then
+				Setup("Club")
+			elseif Message == prefix.."setup train" then
+				Setup("Train")
+
+			elseif Message == prefix.."circle" and Host and Host.Character and Host.Character:FindFirstChild("Humanoid") and Host.Character.Humanoid.Health > 0 then
+				local angle = 0
+				local cfr = Host.Character.HumanoidRootPart.CFrame*CFrame.new(0,1,0)
+				local Index = 0
+				local size = 3
+
+				local PointInTable = getgenv().PointInTable
+
+				local ZAxis
+				local angle = 0
+				if PointInTable <= 10 then
+					ZAxis = 2
+					angle = (10-PointInTable)
+				elseif PointInTable <= 20 then
+					ZAxis = -1
+					angle = (20-PointInTable)
+				elseif PointInTable <= 30 then
+					ZAxis = -4
+					angle = (30-PointInTable)
+				elseif PointInTable <= 40 then
+					ZAxis = -8
+					angle = (40-PointInTable)
+				end
+				angle = angle*36
+				local Clone = game.Players.LocalPlayer.Character
+				Clone.HumanoidRootPart.CFrame = cfr * CFrame.fromEulerAnglesXYZ(0,math.rad(angle),0) * CFrame.new(0,-size,-10)
+				Clone.HumanoidRootPart.CFrame=Clone.HumanoidRootPart.CFrame*CFrame.new(0,0,2)
+				Clone.HumanoidRootPart.CFrame=Clone.HumanoidRootPart.CFrame*CFrame.Angles(0,math.rad(180),0)
+
+			elseif Message == prefix.."spot" then
+				local hrp = game.Players.LocalPlayer
+				local cfr = Host.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-5)
+				hrp.Character.HumanoidRootPart.CanCollide = false
+
+				local Clone = game.Players.LocalPlayer.Character
+				Clone.HumanoidRootPart.CFrame = cfr
+
+			elseif Message == prefix.."wallet on" then
+				ShowWallet()
+			elseif Message == prefix.."wallet off" then
+				RemoveWallet()
+
+			elseif Message == prefix.."floss" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "http://www.roblox.com/asset/?id=10714340543"
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed()
+
+			elseif Message == prefix.."bonechill" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "http://www.roblox.com/asset/?id=15122972413"
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed()
+
+			elseif Message == prefix.."fun" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "http://www.roblox.com/asset/?id=12874447851"
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."dolphin" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "http://www.roblox.com/asset/?id=10714068222"
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed()
+			elseif Message == prefix.."fly" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://13850660986"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."sturdy" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://11710524717"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."rossy" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://1171052744"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."griddy" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://11710529220"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."tpose" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://11710524200"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."speed" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+				local Anim = Instance.new("Animation")
+				Anim.AnimationId = "rbxassetid://11710541744"
+
+				CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+				CurrAnim:Play()
+				CurrAnim:AdjustSpeed() 
+
+			elseif Message == prefix.."stopdance" then
+				if CurrAnim and CurrAnim.IsPlaying then
+					CurrAnim:Stop()
+				end
+			end
+		end
+	end)
+end
+Initiate()
+
+local function onPlayerAdded(player)
+    -- Connect the player's Chatted event to the onPlayerChatted function
+    player.Chatted:Connect(function(message)
+		if player.Name:lower() ~= HostUser:lower() then
+            detectalts(player, message)
+		end
+    end)
+end
+
+-- Connect the PlayerAdded event to the onPlayerAdded function
+game.Players.PlayerAdded:Connect(onPlayerAdded)
+
+-- Connect the existing players in case the script runs after they have joined
+for _, player in ipairs(game.Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
