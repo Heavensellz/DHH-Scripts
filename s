@@ -337,6 +337,20 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		Animations:Close(Window)
 		Window.Visible = false
 		Screen:Destroy()
+		game.CoreGui.CashCounterGui:Destroy()
+		for _, player in pairs(game.Players:GetPlayers()) do
+			local character = player.Character
+			if character then
+				local humanoid = character:FindFirstChildOfClass("Humanoid")
+				if humanoid then
+					for _, billboardGui in pairs(character:GetDescendants()) do
+						if billboardGui:IsA("BillboardGui") then
+							billboardGui:Destroy()
+						end
+					end
+				end
+			end
+		end
 	end
 
 	for Index, Button in next, Sidebar.Top.Buttons:GetChildren() do
