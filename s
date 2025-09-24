@@ -332,6 +332,13 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		end
 	end
 
+	local Close2 = function()
+		Opened = false
+		Animations:Close(Window)
+		Window.Visible = false
+		Window:Destroy()
+	end
+
 	for Index, Button in next, Sidebar.Top.Buttons:GetChildren() do
 		if Button:IsA("TextButton") then
 			local Name = Button.Name
@@ -339,7 +346,7 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 
 			Connect(Button.MouseButton1Click, function() 
 				if Name == "Close" then
-					Close()
+					Close2()
 				elseif Name == "Maximize" then
 					if Maximized then
 						Maximized = false
