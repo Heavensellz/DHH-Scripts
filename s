@@ -49,6 +49,7 @@ local LocalPlayer = GetService(game, "Players").LocalPlayer;
 local Services = {
 	Insert = GetService(game, "InsertService");
 	Tween = GetService(game, "TweenService");
+	Run = GetService(game, "RunService");
 	Input = GetService(game, "UserInputService");
 }
 
@@ -146,29 +147,32 @@ Resizing = {
 }
 
 Resizeable = function(Tab, Minimum, Maximum)
-	task.spawn(function()
-		local MousePos, Size, UIPos = nil, nil, nil
+    task.spawn(function()
+        local MousePos, Size, UIPos = nil, nil, nil
 
-		if Tab and Tab:FindFirstChild("Resize") then
-			local Positions = Tab:FindFirstChild("Resize")
+        if Tab and Tab:FindFirstChild("Resize") then
+            local Positions = Tab:FindFirstChild("Resize")
 
-			for Index, Types in next, Positions:GetChildren() do
-				Connect(Types.InputBegan, function(Input)
-					if Input.UserInputType == Enum.UserInputType.MouseButton1 then
-						Type = Types
-						MousePos = Vector2.new(Player.Mouse.X, Player.Mouse.Y)
-						Size = Tab.AbsoluteSize
-						UIPos = Tab.Position
-					end
-				end)
+            for Index, Types in next, Positions:GetChildren() do
+                -- Only process GUI elements that can receive input
+                if Types:IsA("GuiObject") then  -- ← ADD THIS CHECK
+                    Connect(Types.InputBegan, function(Input)
+                        if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+                            Type = Types
+                            MousePos = Vector2.new(Player.Mouse.X, Player.Mouse.Y)
+                            Size = Tab.AbsoluteSize
+                            UIPos = Tab.Position
+                        end
+                    end)
 
-				Connect(Types.InputEnded, function(Input)
-					if Input.UserInputType == Enum.UserInputType.MouseButton1 then
-						Type = nil
-					end
-				end)
-			end
-		end
+                    Connect(Types.InputEnded, function(Input)
+                        if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+                            Type = nil
+                        end
+                    end)
+                end  -- ← END OF ADDED CHECK
+            end
+        end
 
 		local Resize = function(Delta)
 			if Type and MousePos and Size and UIPos and Tab:FindFirstChild("Resize")[Type.Name] == Type then
