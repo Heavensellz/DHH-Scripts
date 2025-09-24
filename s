@@ -336,7 +336,7 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		Opened = false
 		Animations:Close(Window)
 		Window.Visible = false
-		Window:Destroy()
+		Screen:Destroy()
 	end
 
 	for Index, Button in next, Sidebar.Top.Buttons:GetChildren() do
