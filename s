@@ -207,10 +207,8 @@ end
 --// Setup [UI]
 if (identifyexecutor) then
 	Screen = Services.Insert:LoadLocalAsset("rbxassetid://18490507748");
-	Blur = loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/lates-lib/main/Assets/Blur.lua"))();
 else
 	Screen = (script.Parent);
-	Blur = require(script.Blur)
 end
 
 Screen.Main.Visible = false
@@ -223,7 +221,6 @@ end)
 
 --// Tables for Data
 local Animations = {}
-local Blurs = {}
 local Components = (Screen:FindFirstChild("Components"));
 local Library = {};
 local StoredInfo = {
@@ -319,11 +316,6 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 	Setup.Size = Settings.Size
 	Setup.ThemeMode = Settings.Theme or "Dark"
 
-	if Settings.Blurring then
-		Blurs[Settings.Title] = Blur.new(Window, 5)
-		BlurEnabled = true
-	end
-
 	if Settings.MinimizeKeybind then
 		Setup.Keybind = Settings.MinimizeKeybind
 	end
@@ -331,20 +323,12 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 	--// Animate
 	local Close = function()
 		if Opened then
-			if BlurEnabled then
-				Blurs[Settings.Title].root.Parent = nil
-			end
-
 			Opened = false
 			Animations:Close(Window)
 			Window.Visible = false
 		else
 			Animations:Open(Window, Setup.Transparency)
 			Opened = true
-
-			if BlurEnabled then
-				Blurs[Settings.Title].root.Parent = workspace.CurrentCamera
-			end
 		end
 	end
 
@@ -367,7 +351,6 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 				elseif Name == "Minimize" then
 					Opened = false
 					Window.Visible = false
-					Blurs[Settings.Title].root.Parent = nil
 				end
 			end)
 		end
@@ -961,28 +944,6 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 					Notification.GroupTransparency = Value
 				end
 			end
-			
-		elseif Setting == "Blur" then
-			
-			local AlreadyBlurred, Root = Blurs[Settings.Title], nil
-			
-			if AlreadyBlurred then
-				Root = Blurs[Settings.Title]["root"]
-			end
-			
-			if Value then
-				BlurEnabled = true
-
-				if not AlreadyBlurred or not Root then
-					Blurs[Settings.Title] = Blur.new(Window, 5)
-				elseif Root and not Root.Parent then
-					Root.Parent = workspace.CurrentCamera
-				end
-			elseif not Value and (AlreadyBlurred and Root and Root.Parent) then
-				Root.Parent = nil
-				BlurEnabled = false
-			end
-			
 		elseif Setting == "Theme" and typeof(Value) == "table" then
 			
 			Options:SetTheme(Value)
