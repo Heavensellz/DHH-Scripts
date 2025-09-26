@@ -337,7 +337,6 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		Animations:Close(Window)
 		Window.Visible = false
 		Screen:Destroy()
-		game.Players.Character.Humanoid.BillboardGui:Destroy()
 		for _, player in pairs(game.Players:GetPlayers()) do
 			local character = player.Character
 			if character then
