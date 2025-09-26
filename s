@@ -342,7 +342,7 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 			if character then
 				local humanoid = character:FindFirstChildOfClass("Humanoid")
 				if humanoid then
-					for _, billboardGui in pairs(character:GetDescendants()) do
+					for _, billboardGui in pairs(humanoid:GetDescendants()) do
 						if billboardGui:IsA("BillboardGui") then
 							billboardGui:Destroy()
 						end
