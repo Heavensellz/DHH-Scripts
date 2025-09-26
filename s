@@ -337,7 +337,7 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		Animations:Close(Window)
 		Window.Visible = false
 		Screen:Destroy()
-		game.CoreGui.CashCounterGui:Destroy()
+		game.Players.Character.Humanoid.BillboardGui:Destroy()
 		for _, player in pairs(game.Players:GetPlayers()) do
 			local character = player.Character
 			if character then
@@ -548,7 +548,7 @@ function Library:CreateWindow(Settings: { Title: string, Size: UDim2, Transparen
 		end)
 
 		Connect(TextBox.FocusLost, function() 
-			Settings.Callback(TextBox.Text)
+			Settings.Callback(TextBox)
 		end)
 
 		Animations:Component(Input)
